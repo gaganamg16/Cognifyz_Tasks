@@ -1,0 +1,347 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f7f8fc;
+    color: #1f2937;
+    line-height: 1.6;
+}
+
+
+/* ================= NAVIGATION ================= */
+
+.navbar {
+    width: 100%;
+    padding: 20px 8%;
+    background: #ffffff;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-bottom: 1px solid #e5e7eb;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1d4ed8;
+}
+
+.nav-links {
+    display: flex;
+    gap: 32px;
+}
+
+.nav-links a {
+    color: #374151;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #1d4ed8;
+}
+
+
+/* ================= HERO ================= */
+
+.hero {
+    max-width: 1200px;
+    min-height: 600px;
+
+    margin: auto;
+    padding: 80px 8%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.welcome,
+.section-label {
+    color: #1d4ed8;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    line-height: 1.2;
+    margin-bottom: 25px;
+    color: #111827;
+}
+
+.hero h1 span,
+.about h2 span,
+.contact h2 span {
+    color: #1d4ed8;
+}
+
+.description {
+    max-width: 600px;
+    color: #6b7280;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.button {
+    display: inline-block;
+
+    padding: 13px 25px;
+
+    background: #1d4ed8;
+    color: white;
+
+    text-decoration: none;
+    font-weight: 600;
+
+    border-radius: 7px;
+
+    transition: 0.3s;
+}
+
+.button:hover {
+    background: #1e40af;
+    transform: translateY(-2px);
+}
+
+
+/* ================= IMAGE ================= */
+
+.hero-image {
+    flex: 1;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 520px;
+
+    display: block;
+    margin: auto;
+
+    border-radius: 15px;
+
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+
+/* ================= ABOUT ================= */
+
+.about {
+    background: #ffffff;
+
+    padding: 90px 8%;
+
+    text-align: center;
+}
+
+.about h2,
+.contact h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #111827;
+}
+
+.about-text {
+    max-width: 750px;
+    margin: auto;
+
+    color: #6b7280;
+    font-size: 17px;
+}
+
+
+.skills {
+    max-width: 1000px;
+
+    margin: 50px auto 0;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.skill-card {
+    padding: 30px;
+
+    background: #f8fafc;
+
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+
+    transition: 0.3s;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.skill-card h3 {
+    color: #1d4ed8;
+    margin-bottom: 10px;
+}
+
+.skill-card p {
+    color: #6b7280;
+}
+
+
+/* ================= CONTACT ================= */
+
+.contact {
+    max-width: 700px;
+
+    margin: auto;
+    padding: 90px 8%;
+
+    text-align: center;
+}
+
+form {
+    margin-top: 35px;
+
+    display: flex;
+    flex-direction: column;
+
+    text-align: left;
+    gap: 10px;
+}
+
+label {
+    font-weight: 600;
+}
+
+input {
+    padding: 14px;
+
+    border: 1px solid #d1d5db;
+    border-radius: 7px;
+
+    font-size: 16px;
+
+    outline: none;
+}
+
+input:focus {
+    border-color: #1d4ed8;
+}
+
+button {
+    margin-top: 10px;
+
+    padding: 14px;
+
+    background: #1d4ed8;
+    color: white;
+
+    border: none;
+    border-radius: 7px;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #1e40af;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    padding: 22px;
+
+    background: #111827;
+    color: #d1d5db;
+
+    text-align: center;
+}
+
+
+/* ================= RESPONSIVE DESIGN ================= */
+
+@media (max-width: 800px) {
+
+    .navbar {
+        padding: 18px 5%;
+    }
+
+    .nav-links {
+        gap: 15px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 60px 6%;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-image img {
+        max-width: 450px;
+    }
+
+    .skills {
+        grid-template-columns: 1fr;
+    }
+
+    .about h2,
+    .contact h2 {
+        font-size: 30px;
+    }
+}
+
+
+@media (max-width: 500px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        gap: 18px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .hero {
+        padding-top: 45px;
+    }
+}

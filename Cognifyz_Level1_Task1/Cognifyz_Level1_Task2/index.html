@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>JavaScript Interactive Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div>
+            <p class="subtitle">COGNIFYZ WEB DEVELOPMENT</p>
+            <h1>JavaScript Interactive Dashboard</h1>
+            <p class="intro">
+                Explore simple JavaScript features through an interactive
+                and professional interface.
+            </p>
+        </div>
+    </header>
+
+
+    <!-- Main Content -->
+    <main class="container">
+
+        <!-- Color Changer -->
+        <section class="card">
+
+            <div class="card-number">01</div>
+
+            <h2>Interactive Color</h2>
+
+            <p>
+                Click the button to change its color dynamically using JavaScript.
+            </p>
+
+            <button id="colorButton" class="primary-button">
+                Change Color
+            </button>
+
+        </section>
+
+
+        <!-- Greeting -->
+        <section class="card">
+
+            <div class="card-number">02</div>
+
+            <h2>Time-Based Greeting</h2>
+
+            <p>
+                JavaScript checks your current time and displays an appropriate greeting.
+            </p>
+
+            <button id="greetingButton" class="primary-button">
+                Show Greeting
+            </button>
+
+            <div id="greetingResult" class="result">
+                Your greeting will appear here.
+            </div>
+
+        </section>
+
+
+        <!-- Calculator -->
+        <section class="card">
+
+            <div class="card-number">03</div>
+
+            <h2>Simple Calculator</h2>
+
+            <p>
+                Enter two numbers and calculate their sum.
+            </p>
+
+            <div class="calculator">
+
+                <input
+                    type="number"
+                    id="number1"
+                    placeholder="First number"
+                >
+
+                <span>+</span>
+
+                <input
+                    type="number"
+                    id="number2"
+                    placeholder="Second number"
+                >
+
+            </div>
+
+            <button id="calculateButton" class="primary-button">
+                Calculate Sum
+            </button>
+
+            <div id="calculatorResult" class="result">
+                Result: —
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Cognifyz Tasks</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

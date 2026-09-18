@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f7fb;
+    color: #1f2937;
+    line-height: 1.6;
+}
+
+
+/* Header */
+
+.header {
+    background: #111827;
+    color: white;
+    padding: 70px 8%;
+}
+
+.subtitle {
+    color: #60a5fa;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.header h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.intro {
+    max-width: 650px;
+    color: #d1d5db;
+    font-size: 17px;
+}
+
+
+/* Main */
+
+.container {
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 0 25px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+
+/* Cards */
+
+.card {
+    background: white;
+    padding: 30px;
+
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.card-number {
+    color: #2563eb;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.card h2 {
+    margin-bottom: 12px;
+    color: #111827;
+}
+
+.card p {
+    color: #6b7280;
+    margin-bottom: 25px;
+}
+
+
+/* Buttons */
+
+.primary-button {
+    width: 100%;
+    padding: 13px;
+
+    background: #2563eb;
+    color: white;
+
+    border: none;
+    border-radius: 7px;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.primary-button:hover {
+    background: #1d4ed8;
+}
+
+
+/* Calculator */
+
+.calculator {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 15px;
+}
+
+.calculator input {
+    width: 100%;
+    padding: 12px;
+
+    border: 1px solid #d1d5db;
+    border-radius: 7px;
+
+    outline: none;
+    font-size: 14px;
+}
+
+.calculator input:focus {
+    border-color: #2563eb;
+}
+
+.calculator span {
+    font-weight: bold;
+}
+
+
+/* Results */
+
+.result {
+    margin-top: 15px;
+    padding: 12px;
+
+    background: #f3f4f6;
+
+    border-radius: 7px;
+
+    text-align: center;
+    font-weight: 600;
+}
+
+
+/* Footer */
+
+footer {
+    margin-top: 70px;
+
+    padding: 20px;
+
+    background: #111827;
+    color: #d1d5db;
+
+    text-align: center;
+}
+
+
+/* Responsive */
+
+@media (max-width: 900px) {
+
+    .container {
+        grid-template-columns: 1fr;
+        max-width: 600px;
+    }
+
+    .header h1 {
+        font-size: 34px;
+    }
+}
+
+
+@media (max-width: 500px) {
+
+    .header {
+        padding: 50px 6%;
+    }
+
+    .header h1 {
+        font-size: 28px;
+    }
+
+    .calculator {
+        flex-direction: column;
+    }
+
+    .calculator span {
+        display: none;
+    }
+}
